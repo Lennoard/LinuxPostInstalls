@@ -162,14 +162,14 @@ else
 				success "✓ IntelliJ IDEA Community 2020.1.2 can be found in `pwd`/IDEs\n"
 				;;
 			6)
-				warn "Downloading Android Studio 4.0.0..."
-				wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.0.16/android-studio-ide-193.6514223-linux.tar.gz -q --show-progress
+				warn "Downloading Android Studio 4.0.1..."
+				wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz -q --show-progress
 				warn "Download complete, extracting..."
 				mkdir IDEs 2> /dev/null
-				tar -zxf android-studio-ide-193.6514223-linux.tar.gz --directory IDEs
+				tar -zxf android-studio-ide-193.6626763-linux.tar.gz --directory IDEs
 				apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 				chown -R $USERNAME IDEs
-				success "✓ Android Studio 4.0.0 can be found in `pwd`/IDEs\n"
+				success "✓ Android Studio 4.0.1 can be found in `pwd`/IDEs\n"
 				;;
 			7)	
 				warn "Downloading PyCharm Community 2020.1.2 from JetBrains..."
