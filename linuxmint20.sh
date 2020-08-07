@@ -190,11 +190,10 @@ else
 			9)
 				warn "Installing Nodejs 12..."
 				apt install -y curl software-properties-common
-				error "Nodejs install script currently does not support ulyana\n"
-				#curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
-				#apt install -y nodejs
-				#success "✓ Installed Nodejs (`node -v`)"
-				#success "✓ Installed npm (`nmp -v`)\n"
+				curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+				apt install -y nodejs
+				success "✓ Installed Nodejs (`node -v`)"
+				success "✓ Installed npm (`nmp -v`)\n"
 				;;
 			10)
 				warn "Installing Apache..."
