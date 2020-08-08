@@ -153,13 +153,13 @@ else
 				success "✓ `javac -version`\n"
 				;;
 			5)
-				warn "Downloading IntelliJ IDEA Community 2020.1.2 from JetBrains..."
-				wget https://download-cf.jetbrains.com/idea/ideaIC-2020.1.2.tar.gz -q --show-progress
+				warn "Downloading IntelliJ IDEA Community 2020.2 from JetBrains..."
+				wget https://download-cf.jetbrains.com/idea/ideaIC-2020.2.tar.gz -q --show-progress
 				warn "Download complete, extracting..."
 				mkdir IDEs 2> /dev/null
-				tar -zxf ideaIC-2020.1.2.tar.gz --directory IDEs
+				tar -zxf ideaIC-2020.2.tar.gzz --directory IDEs
 				chown -R $USERNAME IDEs
-				success "✓ IntelliJ IDEA Community 2020.1.2 can be found in `pwd`/IDEs\n"
+				success "✓ IntelliJ IDEA Community 2020.2 can be found in `pwd`/IDEs\n"
 				;;
 			6)
 				warn "Downloading Android Studio 4.0.1..."
