@@ -104,7 +104,7 @@ else
 		4  "Open JDK" off
 		5  "IntelliJ IDEA Community 2020.3.1" off
 		6  "Android Studio 4.0.0" off
-		7  "PyCharm Community 2020.1.2" off
+		7  "PyCharm Community 2020.3.2" off
 		8  "Visual Studio Code" off
 		9  "Nodejs 12" off
 		10 "PHP" off
@@ -172,13 +172,13 @@ else
 				success "✓ Android Studio 4.0.1 can be found in `pwd`/IDEs\n"
 				;;
 			7)	
-				warn "Downloading PyCharm Community 2020.2 from JetBrains..."
-				wget https://download-cf.jetbrains.com/python/pycharm-community-2020.2.tar.gz -q --show-progress
+				warn "Downloading PyCharm Community 2020.3.2 from JetBrains..."
+				wget https://download-cf.jetbrains.com/python/pycharm-community-2020.3.2.tar.gz -q --show-progress
 				warn "Download complete, extracting..."
 				mkdir IDEs 2> /dev/null
-				tar -zxf pycharm-community-2020.2.tar.gz --directory IDEs
+				tar -zxf pycharm-community-2020.3.2.tar.gz --directory IDEs
 				chown -R $USERNAME IDEs
-				success "✓ PyCharm Community 2020.2 can be found in `pwd`/IDEs\n"
+				success "✓ PyCharm Community 2020.3.2 can be found in `pwd`/IDEs\n"
 				;;
 			8)
 				warn "Installing Visual Studio Code..."
