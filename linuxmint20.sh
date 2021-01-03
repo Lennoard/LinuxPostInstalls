@@ -106,7 +106,7 @@ else
 		6  "Android Studio 4.1.1" off
 		7  "PyCharm Community 2020.3.2" off
 		8  "Visual Studio Code" off
-		9  "Nodejs 12" off
+		9  "Nodejs 14" off
 		10 "PHP" off
 		11 "SASS (node)" off
 		12 "Firebase tools (node)" off
@@ -188,9 +188,9 @@ else
 				success "✓ Installed VS Code `code --version\n`"
 				;;
 			9)
-				warn "Installing Nodejs 12..."
+				warn "Installing Nodejs 14..."
 				apt install -y curl software-properties-common
-				curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+				curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 				apt install -y nodejs
 				success "✓ Installed Nodejs (`node -v`)"
 				success "✓ Installed npm (`nmp -v`)\n"
