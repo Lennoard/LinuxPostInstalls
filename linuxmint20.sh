@@ -193,7 +193,7 @@ else
 				curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 				apt install -y nodejs
 				success "✓ Installed Nodejs (`node -v`)"
-				success "✓ Installed npm (`nmp -v`)\n"
+				success "✓ Installed npm (`npm -v`)\n"
 				;;
 			10)
 				warn "Installing Apache..."
