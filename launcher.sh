@@ -31,7 +31,8 @@ then
 		It may ocasionally require input from you too.\n\n\
 		Please select your distro from the list bellow using the space bar key.\n\n\
 		Press ENTER when you're done." 20 61 5 \
-        "linuxmint20"  "Linux Mint 20 'Ulyana'" ON 2> $tempfile
+        "linuxmint20.1"  "Linux Mint 20.1 'Ulyssa'" ON \
+		"linuxmint20"  "Linux Mint 20 'Ulyana'" off 2> $tempfile
 
 	retval=$?
 
