@@ -103,7 +103,7 @@ else
 		3  "Git" off
 		4  "Open JDK" off
 		5  "IntelliJ IDEA Community 2020.3.1" off
-		6  "Android Studio 4.1.1" off
+		6  "Android Studio 4.1.2" off
 		7  "PyCharm Community 2020.3.2" off
 		8  "Visual Studio Code" off
 		9  "Nodejs 14" off
@@ -162,11 +162,11 @@ else
 				success "✓ IntelliJ IDEA Community 2020.3.1 can be found in `pwd`/IDEs\n"
 				;;
 			6)
-				warn "Downloading Android Studio 4.1.1..."
-				wget https://r2---sn-uxaxpo4vcg-j28l.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz -q --show-progress
+				warn "Downloading Android Studio 4.1.2..."
+				wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.2.0/android-studio-ide-201.7042882-linux.tar.gz -q --show-progress
 				warn "Download complete, extracting..."
 				mkdir IDEs 2> /dev/null
-				tar -zxf android-studio-ide-201.6953283-linux.tar.gz --directory IDEs
+				tar -zxf android-studio-ide-201.7042882-linux.tar.gz --directory IDEs
 				apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 				chown -R $USERNAME IDEs
 				success "✓ Android Studio 4.1.1 can be found in `pwd`/IDEs\n"
