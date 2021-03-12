@@ -102,7 +102,7 @@ else
 		2  "Build Essentials" off
 		3  "Git" off
 		4  "Open JDK" off
-		5  "IntelliJ IDEA Community 2020.3.1" off
+		5  "IntelliJ IDEA Community 2020.3.2" off
 		6  "Android Studio 4.1.2" off
 		7  "PyCharm Community 2020.3.2" off
 		8  "Visual Studio Code" off
@@ -153,13 +153,13 @@ else
 				success "✓ `javac -version`\n"
 				;;
 			5)
-				warn "Downloading IntelliJ IDEA Community 2020.3.1 from JetBrains..."
-				wget https://download-cf.jetbrains.com/idea/ideaIC-2020.3.1.tar.gz -q --show-progress
+				warn "Downloading IntelliJ IDEA Community 2020.3.2 from JetBrains..."
+				wget https://download-cf.jetbrains.com/idea/ideaIC-2020.3.2.tar.gz -q --show-progress
 				warn "Download complete, extracting..."
 				mkdir IDEs 2> /dev/null
-				tar -zxf ideaIC-2020.3.1.tar.gz --directory IDEs
+				tar -zxf ideaIC-2020.3.2.tar.gz --directory IDEs
 				chown -R $USERNAME IDEs
-				success "✓ IntelliJ IDEA Community 2020.3.1 can be found in `pwd`/IDEs\n"
+				success "✓ IntelliJ IDEA Community 2020.3.2 can be found in `pwd`/IDEs\n"
 				;;
 			6)
 				warn "Downloading Android Studio 4.1.2..."
@@ -169,7 +169,7 @@ else
 				tar -zxf android-studio-ide-201.7042882-linux.tar.gz --directory IDEs
 				apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 				chown -R $USERNAME IDEs
-				success "✓ Android Studio 4.1.1 can be found in `pwd`/IDEs\n"
+				success "✓ Android Studio 4.1.2 can be found in `pwd`/IDEs\n"
 				;;
 			7)	
 				warn "Downloading PyCharm Community 2020.3.2 from JetBrains..."
